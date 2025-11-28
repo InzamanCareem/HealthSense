@@ -17,3 +17,11 @@ sorting, and forecasting based on structured data.
 - 🔁 Undo latest operation using a stack
 - 📋 View and manage outbreak reports in a queue
 - 🖥️ Command line interface
+
+---
+
+## 📚 References
+
+- **Big-O Cheat Sheet** (2022) *Know Thy Complexities!*. Available at: [https://www.bigocheatsheet.com/](https://www.bigocheatsheet.com/) (Accessed: 20 July 2025)
+- **Geeks for Geeks** (2008) *Merge Sort for Linked Lists*. Available at: [https://www.geeksforgeeks.org/dsa/merge-sort-for-linked-list/](https://www.geeksforgeeks.org/dsa/merge-sort-for-linked-list/) (Accessed: 20 July 2025)
+- **Java SE 8** (2014) *Java™ Platform, Standard Edition 8 API Specification*. Available at: [https://docs.oracle.com/javase/8/docs/api/](https://docs.oracle.com/javase/8/docs/api/) (Accessed: 15 July 2025)

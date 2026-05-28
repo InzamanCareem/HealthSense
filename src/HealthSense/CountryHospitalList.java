@@ -3,7 +3,7 @@ package HealthSense;
 /**
  * Represents a list of hospitals that holds hospital details.
  */
-public class RegionHospitalList {
+public class CountryHospitalList {
     Hospital[] hospitalList = new Hospital[2];
     int hospitalIndex = 0;  // the number of hospitals
 
@@ -122,7 +122,7 @@ public class RegionHospitalList {
     /**
      * Processes a report and adds their given details.
      */
-    public void processReport(RegionReport report){
+    public void processReport(CountryReport report){
         for (Hospital tempHospital : report.hospitalDetails) {
             Hospital hospital = checkHospitalExist(tempHospital.hospitalRegion, tempHospital.hospitalName);
 

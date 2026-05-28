@@ -9,14 +9,14 @@ public class Queue {
     /**
      * Adds a report at the end.
      */
-    public void enqueue(RegionReport report){
+    public void enqueue(CountryReport report){
         queue.addLast(report);
     }
 
     /**
      * Removes the first report.
      */
-    public RegionReport dequeue(){
+    public CountryReport dequeue(){
         return queue.isEmpty() ? null : queue.removeFirst();
     }
 

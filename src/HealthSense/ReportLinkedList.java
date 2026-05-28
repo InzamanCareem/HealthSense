@@ -17,7 +17,7 @@ public class ReportLinkedList {
     /**
      * Adds a new report to the end of the linked list.
      */
-    public void addLast(RegionReport report) {
+    public void addLast(CountryReport report) {
         ReportNode newReportNode = new ReportNode(report);
 
         // If the linked list is empty, set both the head and the tail to the new node
@@ -34,11 +34,11 @@ public class ReportLinkedList {
     /**
      * Removes the first node of the linked list.
      */
-    public RegionReport removeFirst(){
+    public CountryReport removeFirst(){
         if (head == null){
             return null;
         }
-        RegionReport regionReport = head.report;
+        CountryReport regionReport = head.report;
         head = head.next;
         if (head == null){
             tail = null;
@@ -55,7 +55,7 @@ public class ReportLinkedList {
         ReportNode current = head;
         while (current != null){
             System.out.println("REPORT NO. " + current.report.reportNo);
-            System.out.println("REGION NAME: " + current.report.regionName);
+            System.out.println("REGION NAME: " + current.report.countryName);
             System.out.println("WEEK: " + current.report.weekNo);
             for (int i = 0; i < current.report.hospitalDetails.length; i++) {
                 System.out.println("HOSPITAL NAME: " + current.report.hospitalDetails[i].hospitalName);

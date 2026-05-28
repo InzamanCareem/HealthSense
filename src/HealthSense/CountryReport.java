@@ -3,18 +3,18 @@ package HealthSense;
 /**
  * Represents a report that holds report details.
  */
-public class RegionReport {
+public class CountryReport {
     public int reportNo;
-    public String regionName;
+    public String countryName;
     public int weekNo;
     public Hospital[] hospitalDetails;  // Stores a list of hospital objects
 
     /**
-     * Constructs a new RegionReport containing the given report number, region name, week number and hospital details.
+     * Constructs a new countryReport containing the given report number, country name, week number and hospital details.
      */
-    public RegionReport(int reportNo, String regionName, int weekNo, Hospital[] hospitalDetails) {
+    public CountryReport(int reportNo, String countryName, int weekNo, Hospital[] hospitalDetails) {
         this.reportNo = reportNo;
-        this.regionName = regionName;
+        this.countryName = countryName;
         this.weekNo = weekNo;
         this.hospitalDetails = hospitalDetails;
     }

@@ -81,7 +81,7 @@ Search outbreak data using:
 HealthSense includes an advanced outbreak forecasting module powered by:
 
 - **Python FastAPI**
-- **TensorFlow/Keras**
+- **PyTorch**
 - **LSTM (Long Short-Term Memory) Neural Network**
 
 The forecasting system predicts future disease outbreaks using historical time-series patient data.

@@ -210,46 +210,44 @@ public class Main {
                 case 8 -> {
                     System.out.println("FORECASTING DISEASE OUTBREAKS");
 
-                    System.out.print("Enter the country name: ");
-                    String countryName = scanner.nextLine();
-                    System.out.print("Enter the disease name: ");
-                    String diseaseName = scanner.nextLine();
+                    System.out.print("What do you want to know: ");
+                    String query = scanner.nextLine();
 
-                    httpRequestService.post(countryName, diseaseName);
+                    httpRequestService.post(query);
 
-                    String data = httpRequestService.get();
+//                    String data = httpRequestService.get();
 
-                    String obj = data.substring(1, data.length() - 1);
-
-                    String datesPart = obj.split("\"test_dates\":\\[")[1].split("],\"test_predictions\"")[0];
-
-                    String[] dates = datesPart.replace("\"", "").split(",");
-
-                    // Remove T00:00:00
-                    for (int i = 0; i < dates.length; i++) {
-                        dates[i] = dates[i].replace("T00:00:00", "");
-                    }
-
-                    String predictionsPart = obj.split("\"test_predictions\":\\[")[1].split("]")[0];
-
-                    String[] predictionStrings = predictionsPart.split(",");
-
-                    int[] predictions = new int[predictionStrings.length];
-
-                    for (int i = 0; i < predictionStrings.length; i++) {
-
-                        double value = Double.parseDouble(predictionStrings[i]);
-
-                        predictions[i] = (int) Math.round(value);
-                    }
-
-                    System.out.println("┌──────────────┬──────────────────────┐");
-                    System.out.println("│ Date         │ Predicted New Cases  │");
-                    System.out.println("├──────────────┼──────────────────────┤");
-                    for (int i = 0; i < dates.length; i++) {
-                        System.out.printf("│ %-12s │ %,20d │%n", dates[i], predictions[i]);
-                    }
-                    System.out.println("└──────────────┴──────────────────────┘");
+//                    String obj = data.substring(1, data.length() - 1);
+//
+//                    String datesPart = obj.split("\"test_dates\":\\[")[1].split("],\"test_predictions\"")[0];
+//
+//                    String[] dates = datesPart.replace("\"", "").split(",");
+//
+//                    // Remove T00:00:00
+//                    for (int i = 0; i < dates.length; i++) {
+//                        dates[i] = dates[i].replace("T00:00:00", "");
+//                    }
+//
+//                    String predictionsPart = obj.split("\"test_predictions\":\\[")[1].split("]")[0];
+//
+//                    String[] predictionStrings = predictionsPart.split(",");
+//
+//                    int[] predictions = new int[predictionStrings.length];
+//
+//                    for (int i = 0; i < predictionStrings.length; i++) {
+//
+//                        double value = Double.parseDouble(predictionStrings[i]);
+//
+//                        predictions[i] = (int) Math.round(value);
+//                    }
+//
+//                    System.out.println("┌──────────────┬──────────────────────┐");
+//                    System.out.println("│ Date         │ Predicted New Cases  │");
+//                    System.out.println("├──────────────┼──────────────────────┤");
+//                    for (int i = 0; i < dates.length; i++) {
+//                        System.out.printf("│ %-12s │ %,20d │%n", dates[i], predictions[i]);
+//                    }
+//                    System.out.println("└──────────────┴──────────────────────┘");
                 }
 
                 case 9 -> running = false;

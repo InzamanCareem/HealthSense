@@ -14,7 +14,7 @@ public class Main {
         int reportNumber = 1;
 
         boolean running = true;
-        while (running){
+        while (running) {
 
             System.out.println("----------MENU----------\n1. Add\n2. Search\n3. sort data\n4. Undo recent operation\n5. Process outbreak report\n6. View queue\n7. View BST analysis\n8. Forecast disease outbreak\n9. Exit\n------------------------\n");
 
@@ -22,16 +22,16 @@ public class Main {
 
             int command = -1;
 
-            if (scanner.hasNextInt()){
+            if (scanner.hasNextInt()) {
                 command = scanner.nextInt();
             }
 
             scanner.nextLine();
 
-            switch (command){
+            switch (command) {
 
                 case 1 -> {
-                    System.out.println("ADDING REPORT "+ reportNumber);
+                    System.out.println("ADDING REPORT " + reportNumber);
 
                     System.out.print("Enter the country name: ");
                     String countryName = scanner.nextLine();
@@ -89,19 +89,18 @@ public class Main {
                     System.out.print("Enter the search command: ");
 
                     int searchCommand = 0;
-                    if (scanner.hasNextInt()){
+                    if (scanner.hasNextInt()) {
                         searchCommand = scanner.nextInt();
                     }
                     scanner.nextLine();
 
-                    if (searchCommand == 1){
+                    if (searchCommand == 1) {
                         System.out.println("SEARCHING BY DISEASE NAME");
 
                         System.out.print("Enter the disease name: ");
                         String diseaseName = scanner.nextLine();
                         countryHospitalList.searchByDiseaseName(diseaseName);
-                    }
-                    else if (searchCommand == 2){
+                    } else if (searchCommand == 2) {
                         System.out.println("SEARCHING BY HOSPITAL AND PATIENT COUNT");
 
                         System.out.print("Enter the hospital name: ");
@@ -126,12 +125,12 @@ public class Main {
                     System.out.print("Enter the sort command: ");
 
                     int sortCommand = 0;
-                    if (scanner.hasNextInt()){
+                    if (scanner.hasNextInt()) {
                         sortCommand = scanner.nextInt();
                     }
                     scanner.nextLine();
 
-                    if (sortCommand == 1){
+                    if (sortCommand == 1) {
                         System.out.println("SORTING DISEASE COUNTS PER HOSPITAL");
 
                         System.out.print("Enter the country name: ");
@@ -141,8 +140,7 @@ public class Main {
 
                         countryHospitalList.sortDiseaseCountsPerHospital(countryName, hospitalName);
                         countryHospitalList.displayDiseaseRecordOfAHospital(countryName, hospitalName);
-                    }
-                    else if (sortCommand == 2){
+                    } else if (sortCommand == 2) {
                         System.out.println("SORTING DISEASE CASE COUNTS WEEKLY");
 
                         System.out.print("Enter the disease name: ");
@@ -156,10 +154,9 @@ public class Main {
                     System.out.println("UNDOING LATEST OPERATION");
 
                     Hospital[] undo = undoStack.pop();
-                    if (undo != null){
+                    if (undo != null) {
                         countryHospitalList.setHospitalList(undo);
-                    }
-                    else{
+                    } else {
                         System.out.println("Cannot undo operation!");
                     }
                 }
@@ -167,12 +164,11 @@ public class Main {
                 case 5 -> {
                     CountryReport processingReport = countryReportsHandler.dequeue();
 
-                    if (processingReport != null){
+                    if (processingReport != null) {
                         undoStack.push(countryHospitalList.makeDeepCopy());
                         countryHospitalList.processReport(processingReport);
                         System.out.println("Report " + processingReport.reportNo + " processed successfully!");
-                    }
-                    else{
+                    } else {
                         System.out.println("No reports to process!");
                     }
                 }
@@ -191,18 +187,16 @@ public class Main {
                     System.out.print("Enter the view command: ");
 
                     int viewCommand = 0;
-                    if (scanner.hasNextInt()){
+                    if (scanner.hasNextInt()) {
                         viewCommand = scanner.nextInt();
                     }
                     scanner.nextLine();
 
-                    if (viewCommand == 1){
+                    if (viewCommand == 1) {
                         countryHospitalList.viewBinarySearchTreeOrder(viewCommand);
-                    }
-                    else if (viewCommand == 2){
+                    } else if (viewCommand == 2) {
                         countryHospitalList.viewBinarySearchTreeOrder(viewCommand);
-                    }
-                    else if (viewCommand == 3){
+                    } else if (viewCommand == 3) {
                         countryHospitalList.viewBinarySearchTreeOrder(viewCommand);
                     }
                 }
@@ -213,7 +207,10 @@ public class Main {
                     System.out.print("What do you want to know: ");
                     String query = scanner.nextLine();
 
-                    httpRequestService.post(query);
+                    String reply = httpRequestService.post(query);
+
+                    System.out.println("AI Forecast Reply:");
+                    System.out.println(reply);
 
 //                    String data = httpRequestService.get();
 

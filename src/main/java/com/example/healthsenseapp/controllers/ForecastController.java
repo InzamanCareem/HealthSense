@@ -39,10 +39,6 @@ public class ForecastController {
     @FXML
     private VBox chartContainer;
 
-    CategoryAxis xAxis = new CategoryAxis();
-    NumberAxis yAxis = new NumberAxis();
-
-    LineChart<String, Number> lineChart = new LineChart<>(xAxis, yAxis);
 
     @FXML
     public void sendUserQuery() {
@@ -61,12 +57,16 @@ public class ForecastController {
 
             chartContainer.getChildren().clear();
 
-            lineChart.getData().clear();
+            CategoryAxis xAxis = new CategoryAxis();
+            NumberAxis yAxis = new NumberAxis();
+            LineChart<String, Number> lineChart = new LineChart<>(xAxis, yAxis);
+
+            xAxis.setAnimated(false);
+            lineChart.setAnimated(false);
 
             xAxis.setLabel("Dates");
             yAxis.setLabel("Cases");
             lineChart.setTitle("Future Forecast Predictions");
-
             lineChart.setId("forecast-chart");
 
             makeStatistics(result.statistics);
@@ -96,7 +96,7 @@ public class ForecastController {
         Label trend = new Label("Trend - " + statistics.trend);
         Label peak = new Label("Peak - " + statistics.forecast_peak_value + "(" + statistics.forecast_peak_date + ")");
         Label forecastEnd = new Label("Forecast End - " + statistics.forecast_end_value + "(" + statistics.forecast_end_date + ")");
-        Label change = new Label("Change - " + statistics.pct_change_vs_recent_avg + " vs last " + statistics.forecast_horizon_days);
+        Label change = new Label("Change - " + statistics.pct_change_vs_recent_avg + "% vs last " + statistics.forecast_horizon_days);
         Label lastReported = new Label("Last Reported - " + statistics.last_observed_cases + "(" + statistics.last_observed_date + ")");
 
         String statistic =

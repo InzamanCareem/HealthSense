@@ -35,25 +35,25 @@ public class AppController implements Initializable {
         this.rootPane.setPadding(new Insets(10, 0, 10, 0));
     }
 
-//    @FXML
-//    protected void changeToReportsScene() throws IOException {
-//    }
-//
-//    @FXML
-//    protected void changeToAnalyticsScene() throws IOException {
-//    }
-//
-//    @FXML
-//    protected void changeToForecastScene() throws IOException {
-//    }
-//
-//    @FXML
-//    protected void changeToQueueScene() throws IOException {
-//    }
-//
-//    @FXML
-//    protected void changeToSettingsScene() throws IOException {
-//    }
+    @FXML
+    protected void changeToReportsScene() throws IOException {
+    }
+
+    @FXML
+    protected void changeToAnalyticsScene() throws IOException {
+    }
+
+    @FXML
+    protected void changeToForecastScene() throws IOException {
+    }
+
+    @FXML
+    protected void changeToQueueScene() throws IOException {
+    }
+
+    @FXML
+    protected void changeToSettingsScene() throws IOException {
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

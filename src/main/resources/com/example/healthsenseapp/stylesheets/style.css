@@ -1,0 +1,116 @@
+.background{
+    -fx-background-color: #091636;
+}
+
+
+.side-bar{
+    -fx-background-color: #020F2E;
+}
+
+#logo{
+    -fx-text-fill: linear-gradient(to right, #569EFC, #25C5A2);
+}
+
+.side-bar-button {
+    -fx-background-color: #020F2E;
+    -fx-text-fill: white;
+}
+
+.card{
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+    -fx-background-radius: 16;
+
+    -fx-border-color: rgba(255, 255, 255, 0.25);
+    -fx-border-radius: 16;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 15, 0.2, 0, 4);
+}
+
+.card-text{
+    -fx-text-fill: white;
+}
+
+.card-number{
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-radius: 8;
+}
+
+#add-card-number{
+    -fx-effect: dropshadow(gaussian, #00ff66, 20, 0.8, 0, 0);
+}
+
+#search-card-number{
+    -fx-effect: dropshadow(gaussian, #194C85, 20, 0.9, 0, 0);
+}
+
+#sort-card-number{
+    -fx-effect: dropshadow(gaussian, #384895, 20, 0.9, 0, 0);
+}
+
+#undo-card-number{
+    -fx-effect: dropshadow(gaussian, #776138, 20, 0.9, 0, 0);
+}
+
+#process-card-number{
+    -fx-effect: dropshadow(gaussian, #603A61, 20, 0.9, 0, 0);
+}
+
+#queue-card-number{
+    -fx-effect: dropshadow(gaussian, #126E8E, 20, 0.9, 0, 0);
+}
+
+#bst-card-number{
+    -fx-effect: dropshadow(gaussian, #126968, 20, 0.9, 0, 0);
+}
+
+#forecast-card-number{
+    -fx-effect: dropshadow(gaussian, #233D80, 20, 0.9, 0, 0);
+}
+
+#exit-card-number{
+    -fx-effect: dropshadow(gaussian, #324A7A, 20, 0.9, 0, 0);
+}
+
+.card-image{
+    -fx-fit-width: 85;
+    -fx-fit-height: 85;
+}
+
+.card-button{
+    -fx-background-color: #26314C;
+    -fx-text-fill: white;
+}
+
+.card-button:hover {
+    -fx-cursor: hand;
+}
+
+
+/*
+BST Styles
+*/
+
+.header-row{
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.cell {
+    -fx-border-color: lightgray;
+    -fx-border-width: 1;
+    -fx-padding: 10;
+}
+
+
+#forecast-chart .chart-title {
+    -fx-text-fill: white;
+}
+
+#forecast-chart .axis-label {
+    -fx-text-fill: white;
+}
+
+#forecast-chart .axis {
+    -fx-tick-label-fill: white;
+}

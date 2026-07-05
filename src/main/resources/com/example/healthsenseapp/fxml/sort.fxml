@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="1000.0" styleClass="background" stylesheets="@../stylesheets/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.healthsenseapp.controllers.SortController">
+   <padding>
+      <Insets bottom="10" left="10" right="10" top="10" />
+   </padding>
+
+   <children>
+
+      <GridPane hgap="10.0" VBox.vgrow="ALWAYS">
+         <columnConstraints>
+            <ColumnConstraints hgrow="NEVER" maxWidth="256.8000030517578" minWidth="200.0" prefWidth="243.19996643066406" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="256.8000030517578" minWidth="0.0" prefWidth="0.0" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="907.3999999999999" minWidth="707.1999969482422" prefWidth="907.3999999999999" />
+         </columnConstraints>
+
+         <children>
+            <VBox prefHeight="431.0" prefWidth="200.0" spacing="10" GridPane.hgrow="NEVER" GridPane.vgrow="ALWAYS">
+
+               <Label text="Sort Type" textFill="WHITE">
+                  <font>
+                     <Font name="Cambria Bold" size="20.0" />
+                  </font>
+               </Label>
+
+               <RadioButton fx:id="diseaseSort" selected="true" text="Disease counts per hospital" textFill="WHITE">
+                  <VBox.margin>
+                     <Insets bottom="5.0" top="5.0" />
+                  </VBox.margin>
+                  <toggleGroup>
+                     <ToggleGroup fx:id="sortGroup" />
+                  </toggleGroup>
+               </RadioButton>
+
+               <RadioButton fx:id="weekSort" text="Weekly disease case trend" textFill="WHITE" toggleGroup="$sortGroup">
+                  <VBox.margin>
+                     <Insets bottom="5.0" top="5.0" />
+                  </VBox.margin></RadioButton>
+               <VBox fx:id="sortTextField" prefHeight="91.0" prefWidth="200.0" spacing="10.0">
+                  <VBox.margin>
+                     <Insets bottom="10.0" top="10.0" />
+                  </VBox.margin>
+               </VBox>
+
+               <Button text="Sort" />
+
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="200.0" GridPane.columnIndex="1" GridPane.vgrow="ALWAYS" />
+
+            <VBox spacing="10" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+
+               <Label text="Results" textFill="WHITE">
+                  <font>
+                     <Font name="Cambria Bold" size="20.0" />
+                  </font>
+               </Label>
+
+            </VBox>
+
+         </children>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</VBox>

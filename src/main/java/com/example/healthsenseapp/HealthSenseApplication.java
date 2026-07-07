@@ -21,6 +21,8 @@ public class HealthSenseApplication extends Application {
         stage.setScene(scene);
         stage.setMaximized(true);
 
+        scene.getStylesheets().add(getClass().getResource("stylesheets/style.css").toExternalForm());
+
         stage.show();
 
 //        stage.setOnCloseRequest(new EventHandler<WindowEvent>() {

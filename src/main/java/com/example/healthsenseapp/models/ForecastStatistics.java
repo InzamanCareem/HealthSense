@@ -3,6 +3,7 @@ package com.example.healthsenseapp.models;
 
 public class ForecastStatistics {
     public String country;
+    public String disease;
     public String last_observed_date;
     public int last_observed_cases;
     public double recent_14day_avg;

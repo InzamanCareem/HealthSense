@@ -35,14 +35,14 @@
          </children></VBox>
       <GridPane hgap="20.0" prefHeight="600.0" prefWidth="830.0" vgap="20.0">
         <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="ALWAYS" minWidth="250.0" prefWidth="300.0" />
+          <ColumnConstraints hgrow="ALWAYS" minWidth="250.0" prefWidth="300.0" />
+            <ColumnConstraints hgrow="ALWAYS" minWidth="250.0" prefWidth="300.0" />
         </columnConstraints>
         <rowConstraints>
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="200.0" prefHeight="220.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="200.0" prefHeight="220.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="200.0" prefHeight="220.0" vgrow="ALWAYS" />
         </rowConstraints>
          <VBox.margin>
             <Insets bottom="20.0" left="40.0" right="40.0" top="20.0" />
@@ -63,7 +63,7 @@
                         <Insets bottom="10.0" top="10.0" />
                      </VBox.margin>
                      <children>
-                        <ImageView fitHeight="93.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" styleClass="card-image">
+                        <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" styleClass="card-image">
                            <image>
                               <Image url="@../icons/add.png" />
                            </image>
@@ -71,14 +71,14 @@
                               <Insets left="10.0" right="20.0" />
                            </HBox.margin>
                         </ImageView>
-                        <VBox prefHeight="122.0" prefWidth="195.0">
+                        <VBox maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
                            <children>
-                              <Label prefHeight="88.0" prefWidth="226.0" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Add" wrapText="true">
+                              <Label maxHeight="Infinity" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="200.0" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Add" wrapText="true" VBox.vgrow="ALWAYS">
                                  <font>
                                     <Font size="22.0" />
                                  </font>
                               </Label>
-                              <Label prefHeight="60.0" prefWidth="186.0" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Add a new outbreak report or record to the system." wrapText="true">
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Add a new outbreak report or record to the system." wrapText="true" VBox.vgrow="ALWAYS">
                                  <VBox.margin>
                                     <Insets right="5.0" />
                                  </VBox.margin>
@@ -107,7 +107,7 @@
                   <Insets />
                </GridPane.margin>
             </VBox>
-            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="0.0" styleClass="card" stylesheets="@../stylesheets/style.css" GridPane.columnIndex="1">
+            <VBox prefHeight="174.0" prefWidth="294.0" styleClass="card" stylesheets="@../stylesheets/style.css" GridPane.columnIndex="1">
                <children>
                   <Label id="search-card-number" alignment="CENTER" prefHeight="34.0" prefWidth="25.0" styleClass="card-number" stylesheets="@../stylesheets/style.css" text="2">
                      <font>
@@ -122,7 +122,7 @@
                         <Insets bottom="10.0" top="10.0" />
                      </VBox.margin>
                      <children>
-                        <ImageView fitHeight="93.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" styleClass="card-image">
+                        <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" styleClass="card-image">
                            <image>
                               <Image url="@../icons/search.png" />
                            </image>
@@ -130,14 +130,14 @@
                               <Insets left="10.0" right="20.0" />
                            </HBox.margin>
                         </ImageView>
-                        <VBox prefHeight="122.0" prefWidth="195.0">
+                        <VBox maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
                            <children>
-                              <Label prefHeight="88.0" prefWidth="226.0" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Search" wrapText="true">
+                              <Label maxHeight="Infinity" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="200.0" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Search" wrapText="true" VBox.vgrow="ALWAYS">
                                  <font>
                                     <Font size="22.0" />
                                  </font>
                               </Label>
-                              <Label prefHeight="60.0" prefWidth="221.0" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Search and find outbreak reports quickly." wrapText="true">
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Search and find outbreak reports quickly." wrapText="true" VBox.vgrow="ALWAYS">
                                  <VBox.margin>
                                     <Insets right="5.0" />
                                  </VBox.margin>
@@ -151,7 +151,7 @@
                   </HBox>
                   <HBox alignment="CENTER_RIGHT" prefHeight="15.0" prefWidth="293.0">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#changeToSearchScene" prefHeight="3.0" prefWidth="26.0" styleClass="card-button" stylesheets="@../stylesheets/style.css" text="&gt;">
+                        <Button mnemonicParsing="false" onAction="#changeToAddScene" prefHeight="3.0" prefWidth="26.0" styleClass="card-button" stylesheets="@../stylesheets/style.css" text="&gt;">
                            <HBox.margin>
                               <Insets />
                            </HBox.margin>
@@ -162,11 +162,8 @@
                      </padding>
                   </HBox>
                </children>
-               <GridPane.margin>
-                  <Insets />
-               </GridPane.margin>
             </VBox>
-            <VBox prefHeight="0.0" styleClass="card" stylesheets="@../stylesheets/style.css" GridPane.columnIndex="2">
+            <VBox prefHeight="174.0" prefWidth="294.0" styleClass="card" stylesheets="@../stylesheets/style.css" GridPane.columnIndex="2">
                <children>
                   <Label id="sort-card-number" alignment="CENTER" prefHeight="34.0" prefWidth="25.0" styleClass="card-number" stylesheets="@../stylesheets/style.css" text="3">
                      <font>
@@ -181,22 +178,22 @@
                         <Insets bottom="10.0" top="10.0" />
                      </VBox.margin>
                      <children>
-                        <ImageView fitHeight="93.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" styleClass="card-image">
+                        <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" styleClass="card-image">
                            <image>
-                              <Image url="@../icons/search.png" />
+                              <Image url="@../icons/add.png" />
                            </image>
                            <HBox.margin>
                               <Insets left="10.0" right="20.0" />
                            </HBox.margin>
                         </ImageView>
-                        <VBox prefHeight="122.0" prefWidth="195.0">
+                        <VBox maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
                            <children>
-                              <Label prefHeight="88.0" prefWidth="226.0" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Sort Data" wrapText="true">
+                              <Label maxHeight="Infinity" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="200.0" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Sort Data" wrapText="true" VBox.vgrow="ALWAYS">
                                  <font>
                                     <Font size="22.0" />
                                  </font>
                               </Label>
-                              <Label prefHeight="60.0" prefWidth="221.0" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Sorts reports by date, location, severity or other filters." wrapText="true">
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Sorts reports by date, location, severity or other filters." wrapText="true" VBox.vgrow="ALWAYS">
                                  <VBox.margin>
                                     <Insets right="5.0" />
                                  </VBox.margin>
@@ -210,7 +207,7 @@
                   </HBox>
                   <HBox alignment="CENTER_RIGHT" prefHeight="15.0" prefWidth="293.0">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#changeToSortScene" prefHeight="3.0" prefWidth="26.0" styleClass="card-button" stylesheets="@../stylesheets/style.css" text="&gt;">
+                        <Button mnemonicParsing="false" onAction="#changeToAddScene" prefHeight="3.0" prefWidth="26.0" styleClass="card-button" stylesheets="@../stylesheets/style.css" text="&gt;">
                            <HBox.margin>
                               <Insets />
                            </HBox.margin>
@@ -221,11 +218,8 @@
                      </padding>
                   </HBox>
                </children>
-               <GridPane.margin>
-                  <Insets />
-               </GridPane.margin>
             </VBox>
-            <VBox prefHeight="0.0" styleClass="card" stylesheets="@../stylesheets/style.css" GridPane.rowIndex="1">
+            <VBox prefHeight="174.0" prefWidth="294.0" styleClass="card" stylesheets="@../stylesheets/style.css" GridPane.rowIndex="1">
                <children>
                   <Label id="undo-card-number" alignment="CENTER" prefHeight="34.0" prefWidth="25.0" styleClass="card-number" stylesheets="@../stylesheets/style.css" text="4">
                      <font>
@@ -240,7 +234,7 @@
                         <Insets bottom="10.0" top="10.0" />
                      </VBox.margin>
                      <children>
-                        <ImageView fitHeight="93.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" styleClass="card-image">
+                        <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" styleClass="card-image">
                            <image>
                               <Image url="@../icons/undo.png" />
                            </image>
@@ -248,14 +242,14 @@
                               <Insets left="10.0" right="20.0" />
                            </HBox.margin>
                         </ImageView>
-                        <VBox prefHeight="122.0" prefWidth="195.0">
+                        <VBox maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
                            <children>
-                              <Label prefHeight="88.0" prefWidth="190.0" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Undo" wrapText="true">
+                              <Label maxHeight="Infinity" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="200.0" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Undo" wrapText="true" VBox.vgrow="ALWAYS">
                                  <font>
                                     <Font size="22.0" />
                                  </font>
                               </Label>
-                              <Label prefHeight="60.0" prefWidth="221.0" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Undo the most recent operation performed." wrapText="true">
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Undo the most recent operation performed." wrapText="true" VBox.vgrow="ALWAYS">
                                  <VBox.margin>
                                     <Insets right="5.0" />
                                  </VBox.margin>
@@ -269,7 +263,7 @@
                   </HBox>
                   <HBox alignment="CENTER_RIGHT" prefHeight="15.0" prefWidth="293.0">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#undo" prefHeight="3.0" prefWidth="26.0" styleClass="card-button" stylesheets="@../stylesheets/style.css" text="&gt;">
+                        <Button mnemonicParsing="false" onAction="#changeToAddScene" prefHeight="3.0" prefWidth="26.0" styleClass="card-button" stylesheets="@../stylesheets/style.css" text="&gt;">
                            <HBox.margin>
                               <Insets />
                            </HBox.margin>
@@ -280,11 +274,8 @@
                      </padding>
                   </HBox>
                </children>
-               <GridPane.margin>
-                  <Insets />
-               </GridPane.margin>
             </VBox>
-            <VBox prefHeight="0.0" styleClass="card" stylesheets="@../stylesheets/style.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <VBox prefHeight="174.0" prefWidth="294.0" styleClass="card" stylesheets="@../stylesheets/style.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
                   <Label id="process-card-number" alignment="CENTER" prefHeight="34.0" prefWidth="25.0" styleClass="card-number" stylesheets="@../stylesheets/style.css" text="5">
                      <font>
@@ -294,27 +285,27 @@
                         <Insets left="10.0" top="10.0" />
                      </VBox.margin>
                   </Label>
-                  <HBox alignment="CENTER_LEFT" prefHeight="86.0" prefWidth="413.0">
+                  <HBox alignment="CENTER_LEFT" prefHeight="157.0" prefWidth="314.0">
                      <VBox.margin>
                         <Insets bottom="10.0" top="10.0" />
                      </VBox.margin>
                      <children>
-                        <ImageView fitHeight="93.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" styleClass="card-image">
+                        <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" styleClass="card-image">
                            <image>
-                              <Image url="@../icons/search.png" />
+                              <Image url="@../icons/add.png" />
                            </image>
                            <HBox.margin>
                               <Insets left="10.0" right="20.0" />
                            </HBox.margin>
                         </ImageView>
-                        <VBox prefHeight="122.0" prefWidth="195.0">
+                        <VBox maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
                            <children>
-                              <Label prefHeight="42.0" prefWidth="254.0" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Process Outbreak Report" wrapText="true">
+                              <Label maxHeight="Infinity" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="200.0" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Process Outbreak Reports" wrapText="true" VBox.vgrow="ALWAYS">
                                  <font>
                                     <Font size="22.0" />
                                  </font>
                               </Label>
-                              <Label prefHeight="60.0" prefWidth="186.0" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Validate, process and store outbreak reports in the system." wrapText="true">
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Validate, process and store outbreak reports in the system." wrapText="true" VBox.vgrow="ALWAYS">
                                  <VBox.margin>
                                     <Insets right="5.0" />
                                  </VBox.margin>
@@ -328,7 +319,7 @@
                   </HBox>
                   <HBox alignment="CENTER_RIGHT" prefHeight="15.0" prefWidth="293.0">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#changeToProcessScene" prefHeight="3.0" prefWidth="26.0" styleClass="card-button" stylesheets="@../stylesheets/style.css" text="&gt;">
+                        <Button mnemonicParsing="false" onAction="#changeToAddScene" prefHeight="3.0" prefWidth="26.0" styleClass="card-button" stylesheets="@../stylesheets/style.css" text="&gt;">
                            <HBox.margin>
                               <Insets />
                            </HBox.margin>
@@ -339,13 +330,10 @@
                      </padding>
                   </HBox>
                </children>
-               <GridPane.margin>
-                  <Insets />
-               </GridPane.margin>
             </VBox>
-            <VBox prefHeight="0.0" styleClass="card" stylesheets="@../stylesheets/style.css" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <VBox prefHeight="174.0" prefWidth="294.0" styleClass="card" stylesheets="@../stylesheets/style.css" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <children>
-                  <Label id="queue-card-number" alignment="CENTER" prefHeight="34.0" prefWidth="25.0" styleClass="card-number" stylesheets="@../stylesheets/style.css" text="6">
+                  <Label id="bst-card-number" alignment="CENTER" prefHeight="34.0" prefWidth="25.0" styleClass="card-number" stylesheets="@../stylesheets/style.css" text="6">
                      <font>
                         <Font name="Cambria Bold" size="15.0" />
                      </font>
@@ -358,22 +346,22 @@
                         <Insets bottom="10.0" top="10.0" />
                      </VBox.margin>
                      <children>
-                        <ImageView fitHeight="93.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" styleClass="card-image">
+                        <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" styleClass="card-image">
                            <image>
-                              <Image url="@../icons/menu-bar.png" />
+                              <Image url="@../icons/add.png" />
                            </image>
                            <HBox.margin>
                               <Insets left="10.0" right="20.0" />
                            </HBox.margin>
                         </ImageView>
-                        <VBox prefHeight="122.0" prefWidth="195.0">
+                        <VBox maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
                            <children>
-                              <Label prefHeight="88.0" prefWidth="226.0" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="View Queue" wrapText="true">
+                              <Label maxHeight="Infinity" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="200.0" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="View Classification Analysis" wrapText="true" VBox.vgrow="ALWAYS">
                                  <font>
                                     <Font size="22.0" />
                                  </font>
                               </Label>
-                              <Label prefHeight="60.0" prefWidth="221.0" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="View all queued reports awaiting processing." wrapText="true">
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Visualize and analyze outbreak data using BST structure." wrapText="true" VBox.vgrow="ALWAYS">
                                  <VBox.margin>
                                     <Insets right="5.0" />
                                  </VBox.margin>
@@ -387,7 +375,7 @@
                   </HBox>
                   <HBox alignment="CENTER_RIGHT" prefHeight="15.0" prefWidth="293.0">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="3.0" prefWidth="26.0" styleClass="card-button" stylesheets="@../stylesheets/style.css" text="&gt;">
+                        <Button mnemonicParsing="false" onAction="#changeToAddScene" prefHeight="3.0" prefWidth="26.0" styleClass="card-button" stylesheets="@../stylesheets/style.css" text="&gt;">
                            <HBox.margin>
                               <Insets />
                            </HBox.margin>
@@ -398,13 +386,10 @@
                      </padding>
                   </HBox>
                </children>
-               <GridPane.margin>
-                  <Insets />
-               </GridPane.margin>
             </VBox>
-            <VBox prefHeight="0.0" styleClass="card" stylesheets="@../stylesheets/style.css" GridPane.rowIndex="2">
+            <VBox prefHeight="174.0" prefWidth="294.0" styleClass="card" stylesheets="@../stylesheets/style.css" GridPane.rowIndex="2">
                <children>
-                  <Label id="bst-card-number" alignment="CENTER" prefHeight="34.0" prefWidth="25.0" styleClass="card-number" stylesheets="@../stylesheets/style.css" text="7">
+                  <Label id="forecast-card-number" alignment="CENTER" prefHeight="34.0" prefWidth="25.0" styleClass="card-number" stylesheets="@../stylesheets/style.css" text="7">
                      <font>
                         <Font name="Cambria Bold" size="15.0" />
                      </font>
@@ -417,22 +402,22 @@
                         <Insets bottom="10.0" top="10.0" />
                      </VBox.margin>
                      <children>
-                        <ImageView fitHeight="93.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" styleClass="card-image">
+                        <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" styleClass="card-image">
                            <image>
-                              <Image url="@../icons/search.png" />
+                              <Image url="@../icons/add.png" />
                            </image>
                            <HBox.margin>
                               <Insets left="10.0" right="20.0" />
                            </HBox.margin>
                         </ImageView>
-                        <VBox prefHeight="122.0" prefWidth="195.0">
+                        <VBox maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
                            <children>
-                              <Label prefHeight="88.0" prefWidth="226.0" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="View BST Analysis" wrapText="true">
+                              <Label maxHeight="Infinity" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="200.0" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="AI Forecast" wrapText="true" VBox.vgrow="ALWAYS">
                                  <font>
                                     <Font size="22.0" />
                                  </font>
                               </Label>
-                              <Label prefHeight="60.0" prefWidth="221.0" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Visualize and analyze outbreak data using BST structure." wrapText="true">
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Predict future outbreaks using AI/ML based forecasting." wrapText="true" VBox.vgrow="ALWAYS">
                                  <VBox.margin>
                                     <Insets right="5.0" />
                                  </VBox.margin>
@@ -446,7 +431,7 @@
                   </HBox>
                   <HBox alignment="CENTER_RIGHT" prefHeight="15.0" prefWidth="293.0">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#changeToBSTScene" prefHeight="3.0" prefWidth="26.0" styleClass="card-button" stylesheets="@../stylesheets/style.css" text="&gt;">
+                        <Button mnemonicParsing="false" onAction="#changeToAddScene" prefHeight="3.0" prefWidth="26.0" styleClass="card-button" stylesheets="@../stylesheets/style.css" text="&gt;">
                            <HBox.margin>
                               <Insets />
                            </HBox.margin>
@@ -457,13 +442,10 @@
                      </padding>
                   </HBox>
                </children>
-               <GridPane.margin>
-                  <Insets />
-               </GridPane.margin>
             </VBox>
-            <VBox prefHeight="0.0" styleClass="card" stylesheets="@../stylesheets/style.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <VBox prefHeight="174.0" prefWidth="294.0" styleClass="card" stylesheets="@../stylesheets/style.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
-                  <Label id="forecast-card-number" alignment="CENTER" prefHeight="34.0" prefWidth="25.0" styleClass="card-number" stylesheets="@../stylesheets/style.css" text="8">
+                  <Label id="exit-card-number" alignment="CENTER" prefHeight="34.0" prefWidth="25.0" styleClass="card-number" stylesheets="@../stylesheets/style.css" text="8">
                      <font>
                         <Font name="Cambria Bold" size="15.0" />
                      </font>
@@ -476,22 +458,22 @@
                         <Insets bottom="10.0" top="10.0" />
                      </VBox.margin>
                      <children>
-                        <ImageView fitHeight="93.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" styleClass="card-image">
+                        <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" styleClass="card-image">
                            <image>
-                              <Image url="@../icons/search.png" />
+                              <Image url="@../icons/add.png" />
                            </image>
                            <HBox.margin>
                               <Insets left="10.0" right="20.0" />
                            </HBox.margin>
                         </ImageView>
-                        <VBox prefHeight="122.0" prefWidth="195.0">
+                        <VBox maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
                            <children>
-                              <Label prefHeight="88.0" prefWidth="226.0" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Forecast Disease Outbreak" wrapText="true">
+                              <Label maxHeight="Infinity" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="200.0" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Exit" wrapText="true" VBox.vgrow="ALWAYS">
                                  <font>
                                     <Font size="22.0" />
                                  </font>
                               </Label>
-                              <Label prefHeight="60.0" prefWidth="221.0" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Predict future outbreaks using AI/ML based forecasting." wrapText="true">
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Close the application safely and securely." wrapText="true" VBox.vgrow="ALWAYS">
                                  <VBox.margin>
                                     <Insets right="5.0" />
                                  </VBox.margin>
@@ -505,7 +487,7 @@
                   </HBox>
                   <HBox alignment="CENTER_RIGHT" prefHeight="15.0" prefWidth="293.0">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#changeToForecastScene" prefHeight="3.0" prefWidth="26.0" styleClass="card-button" stylesheets="@../stylesheets/style.css" text="&gt;">
+                        <Button mnemonicParsing="false" onAction="#changeToAddScene" prefHeight="3.0" prefWidth="26.0" styleClass="card-button" stylesheets="@../stylesheets/style.css" text="&gt;">
                            <HBox.margin>
                               <Insets />
                            </HBox.margin>
@@ -516,68 +498,6 @@
                      </padding>
                   </HBox>
                </children>
-               <GridPane.margin>
-                  <Insets />
-               </GridPane.margin>
-            </VBox>
-            <VBox prefHeight="0.0" styleClass="card" stylesheets="@../stylesheets/style.css" GridPane.columnIndex="2" GridPane.rowIndex="2">
-               <children>
-                  <Label id="exit-card-number" alignment="CENTER" prefHeight="34.0" prefWidth="25.0" styleClass="card-number" stylesheets="@../stylesheets/style.css" text="9">
-                     <font>
-                        <Font name="Cambria Bold" size="15.0" />
-                     </font>
-                     <VBox.margin>
-                        <Insets left="10.0" top="10.0" />
-                     </VBox.margin>
-                  </Label>
-                  <HBox alignment="CENTER_LEFT" prefHeight="157.0" prefWidth="314.0">
-                     <VBox.margin>
-                        <Insets bottom="10.0" top="10.0" />
-                     </VBox.margin>
-                     <children>
-                        <ImageView fitHeight="93.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" styleClass="card-image">
-                           <image>
-                              <Image url="@../icons/search.png" />
-                           </image>
-                           <HBox.margin>
-                              <Insets left="10.0" right="20.0" />
-                           </HBox.margin>
-                        </ImageView>
-                        <VBox prefHeight="122.0" prefWidth="195.0">
-                           <children>
-                              <Label prefHeight="88.0" prefWidth="226.0" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Exit" wrapText="true">
-                                 <font>
-                                    <Font size="22.0" />
-                                 </font>
-                              </Label>
-                              <Label prefHeight="60.0" prefWidth="221.0" styleClass="card-text" stylesheets="@../stylesheets/style.css" text="Close the application safely and securely." wrapText="true">
-                                 <VBox.margin>
-                                    <Insets right="5.0" />
-                                 </VBox.margin>
-                              </Label>
-                           </children>
-                           <HBox.margin>
-                              <Insets />
-                           </HBox.margin>
-                        </VBox>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER_RIGHT" prefHeight="15.0" prefWidth="293.0">
-                     <children>
-                        <Button mnemonicParsing="false" onAction="#exit" prefHeight="3.0" prefWidth="26.0" styleClass="card-button" stylesheets="@../stylesheets/style.css" text="&gt;">
-                           <HBox.margin>
-                              <Insets />
-                           </HBox.margin>
-                        </Button>
-                     </children>
-                     <padding>
-                        <Insets bottom="10.0" right="10.0" top="10.0" />
-                     </padding>
-                  </HBox>
-               </children>
-               <GridPane.margin>
-                  <Insets />
-               </GridPane.margin>
             </VBox>
          </children>
       </GridPane>
